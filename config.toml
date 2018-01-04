@@ -47,10 +47,10 @@ disqusShortname = "bilberry-hugo-theme"
     subtitle = "Hello World! This is code's first print."
 
     # if you want to use gravatar for the header image
-    gravatarEMail = "https://raw.githubusercontent.com/weiyouyinzhen/pages/master/docs/images/avater.png"
+    gravatarEMail = "/images/patreon.png"
 
     # set an path to the image file you want to use | overwrites gravatar
-    customImage = "https://raw.githubusercontent.com/weiyouyinzhen/pages/master/docs/images/avater.png"
+    customImage = "/images/patreon.png"
 
     # always display the top navigation (with pages and search) on non-mobile screens
     permanentTopNav = false
