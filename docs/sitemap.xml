@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://weiyouyinzhen.github.io/article/hugo-in-github-pages/</loc>
+    <lastmod>2018-01-05T10:35:27+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://weiyouyinzhen.github.io/page/about-this/</loc>
+    <lastmod>2018-01-04T21:58:45+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://weiyouyinzhen.github.io/page/github/</loc>
     <lastmod>2018-01-04T21:41:56+08:00</lastmod>
   </url>
@@ -28,11 +38,6 @@
   </url>
   
   <url>
-    <loc>http://weiyouyinzhen.github.io/page/about-this/</loc>
-    <lastmod>2017-11-01T13:18:45+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://weiyouyinzhen.github.io/link/duckduckgo/</loc>
     <lastmod>2017-11-01T13:05:27+01:00</lastmod>
   </url>
@@ -49,7 +54,7 @@
   
   <url>
     <loc>http://weiyouyinzhen.github.io/article/</loc>
-    <lastmod>2017-11-01T18:10:14+01:00</lastmod>
+    <lastmod>2018-01-05T10:35:27+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -77,7 +82,7 @@
   
   <url>
     <loc>http://weiyouyinzhen.github.io/categories/code/</loc>
-    <lastmod>2017-11-01T09:31:27+01:00</lastmod>
+    <lastmod>2018-01-05T10:35:27+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -125,7 +130,7 @@
   
   <url>
     <loc>http://weiyouyinzhen.github.io/tags/hugo/</loc>
-    <lastmod>2017-11-01T09:31:27+01:00</lastmod>
+    <lastmod>2018-01-05T10:35:27+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -155,13 +160,13 @@
   
   <url>
     <loc>http://weiyouyinzhen.github.io/</loc>
-    <lastmod>2018-01-04T21:41:56+08:00</lastmod>
+    <lastmod>2018-01-05T10:35:27+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://weiyouyinzhen.github.io/author/luoyong/</loc>
-    <lastmod>2017-11-01T13:18:45+01:00</lastmod>
+    <lastmod>2018-01-05T10:35:27+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -173,7 +178,7 @@
   
   <url>
     <loc>http://weiyouyinzhen.github.io/page/</loc>
-    <lastmod>2018-01-04T21:41:56+08:00</lastmod>
+    <lastmod>2018-01-04T21:58:45+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -256,8 +261,14 @@
   </url>
   
   <url>
+    <loc>http://weiyouyinzhen.github.io/tags/tutorials/</loc>
+    <lastmod>2018-01-05T10:35:27+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://weiyouyinzhen.github.io/categories/tutorials/</loc>
-    <lastmod>2017-11-01T09:31:27+01:00</lastmod>
+    <lastmod>2018-01-05T10:35:27+08:00</lastmod>
     <priority>0</priority>
   </url>
   
