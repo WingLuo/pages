@@ -107,9 +107,7 @@
     </div>
 
     
-        
-
-<p>这是第一篇自己的博客,讲述使用<code>github pages</code>和<code>hugo</code>创建自己的个人博客的教程,说实话,经历两天的摸索,终于能够使用简单的操作,将自己写的<code>markdown</code>上传到博客上.
+        <p>这是第一篇自己的博客,讲述使用<code>github pages</code>和<code>hugo</code>创建自己的个人博客的教程,说实话,经历两天的摸索,终于能够使用简单的操作,将自己写的<code>markdown</code>上传到博客上.
 这里讲一下事情的原委:
 之前在阿里云上面注册了一个域名<a href="http://bootloader.cn">bootloader.cn</a>,但是我却不知道有什么用,2018年伊始,郭神的博客推送了一片免费创建个人博客网站的文章,我觉得是时候对自我进行一个投资了(之前看书的时候就有人建议过,作为程序员,要树立自己的品牌形象,让更多的人了解你),当然,在技术行业,也要具有分享精神.当我搭建完自己的博客后,我决定将我的搭建过程分享出来,给大家参考.</p>
 
@@ -120,123 +118,125 @@
 
 <li><p>如果你想最简单的创建自己的博客网站,那么<code>fork</code>一下<a href="https://github.com/barryclark/jekyll-now">jekyll- now</a>,然后Settings&ndash;&gt;Repository name 改为<code>&lt;UerName&gt;.github.io</code>&ndash;&gt;RENAME;Settings&ndash;&gt;GitHub Pages&ndash;&gt;Source&ndash;&gt;master branch;Code&ndash;&gt;_config.yml&ndash;&gt;Edit This File;按照需求修改,现在你就可以通过<code>htps://&lt;UerName&gt;.github.io</code>访问你的博客了,当然你后续的要上传的文章,需要写成<code>.md</code>(markdown)的文件上传到<code>_posts</code>文件夹下面github会自动帮你生成.本文是Hugo的文章,所以这里就简单的介绍了一下jekyll</p></li>
 
-<li><p>安装<a href="https://gohugo.io/getting-started/installing">Hugo</a>, 英文版的教程,看着头大,还好有google翻译,整个流程是:新建Hugo的文件夹(在你想要放置hugo的任意位置),在Hugo文件夹下面新建bin和Seits文件夹,下载对应的<a href="https://github.com/gohugoio/hugo/releases">Hugo发行版</a>,将文件解压到bin文件夹下面,将可执行文件更名为hugo.exe,设置环境变量Path添加路径指向到bin文件夹,打开控制台,输入<code>hugo help</code>,显示
-```
-hugo is the main command, used to build your Hugo site.</p></li>
+<li><p>安装<a href="https://gohugo.io/getting-started/installing">Hugo</a>, 英文版的教程,看着头大,还好有google翻译,整个流程是:新建Hugo的文件夹(在你想要放置hugo的任意位置),在Hugo文件夹下面新建bin和Seits文件夹,下载对应的<a href="https://github.com/gohugoio/hugo/releases">Hugo发行版</a>,将文件解压到bin文件夹下面,将可执行文件更名为hugo.exe,设置环境变量Path添加路径指向到bin文件夹,打开控制台,输入<code>hugo help</code>,显示</p></li>
 </ol>
 
-<p>Hugo is a Fast and Flexible Static Site Generator
-built with love by spf13 and friends in Go.</p>
+<pre><code>hugo is the main command, used to build your Hugo site.
 
-<p>Complete documentation is available at <a href="https://gohugo.io/">https://gohugo.io/</a>.</p>
+Hugo is a Fast and Flexible Static Site Generator
+built with love by spf13 and friends in Go.
 
-<pre><code>说明hugo安装成功了,如果失败,请参照[Hugo安装文档](https://gohugo.io/getting-started/installing)
-
-5. 安装[Git](https://git-scm.com/downloads),我是用的windows系统,并且下载的是`Git for Windows Portable（“thumbdrive edition”）`版本,解压到你想要的路径,然后配置环境变量中Path添加路径指向到Git安装路径的bin文件夹,打开控制台,输入git,如果出现
+Complete documentation is available at https://gohugo.io/.
 </code></pre>
 
-<p>usage: git [&ndash;version] [&ndash;help] [-C <path>] [-c name=value]
-           [&ndash;exec-path[=<path>]] [&ndash;html-path] [&ndash;man-path] [&ndash;info-path]
-           [-p | &ndash;paginate | &ndash;no-pager] [&ndash;no-replace-objects] [&ndash;bare]
-           [&ndash;git-dir=<path>] [&ndash;work-tree=<path>] [&ndash;namespace=<name>]
-           <command> [<args>]</p>
+<p>说明hugo安装成功了,如果失败,请参照<a href="https://gohugo.io/getting-started/installing">Hugo安装文档</a></p>
 
-<p>These are common Git commands used in various situations:</p>
+<ol>
+<li>安装<a href="https://git-scm.com/downloads">Git</a>,我是用的windows系统,并且下载的是<code>Git for Windows Portable（“thumbdrive edition”）</code>版本,解压到你想要的路径,然后配置环境变量中Path添加路径指向到Git安装路径的bin文件夹,打开控制台,输入git,如果出现</li>
+</ol>
 
-<p>start a working area (see also: git help tutorial)
+<pre><code>usage: git [--version] [--help] [-C &lt;path&gt;] [-c name=value]
+           [--exec-path[=&lt;path&gt;]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=&lt;path&gt;] [--work-tree=&lt;path&gt;] [--namespace=&lt;name&gt;]
+           &lt;command&gt; [&lt;args&gt;]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
    clone      Clone a repository into a new directory
-   init       Create an empty Git repository or reinitialize an existing one</p>
+   init       Create an empty Git repository or reinitialize an existing one
 
-<p>work on the current change (see also: git help everyday)
+work on the current change (see also: git help everyday)
    add        Add file contents to the index
    mv         Move or rename a file, a directory, or a symlink
    reset      Reset current HEAD to the specified state
-   rm         Remove files from the working tree and from the index</p>
+   rm         Remove files from the working tree and from the index
 
-<p>examine the history and state (see also: git help revisions)
+examine the history and state (see also: git help revisions)
    bisect     Use binary search to find the commit that introduced a bug
    grep       Print lines matching a pattern
    log        Show commit logs
    show       Show various types of objects
-   status     Show the working tree status</p>
+   status     Show the working tree status
 
-<p>grow, mark and tweak your common history
+grow, mark and tweak your common history
    branch     List, create, or delete branches
    checkout   Switch branches or restore working tree files
    commit     Record changes to the repository
    diff       Show changes between commits, commit and working tree, etc
    merge      Join two or more development histories together
    rebase     Reapply commits on top of another base tip
-   tag        Create, list, delete or verify a tag object signed with GPG</p>
+   tag        Create, list, delete or verify a tag object signed with GPG
 
-<p>collaborate (see also: git help workflows)
+collaborate (see also: git help workflows)
    fetch      Download objects and refs from another repository
    pull       Fetch from and integrate with another repository or a local branch
-   push       Update remote refs along with associated objects</p>
+   push       Update remote refs along with associated objects
 
-<p>&lsquo;git help -a&rsquo; and &lsquo;git help -g&rsquo; list available subcommands and some
-concept guides. See &lsquo;git help <command>&rsquo; or &lsquo;git help <concept>&lsquo;
-to read about a specific subcommand or concept.</p>
-
-<pre><code>说明git环境变量添加成功,然后输入`sh`控制台会切换到`Git-bash`的环境下面,然后输入`ssh`控制台会返回
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help &lt;command&gt;' or 'git help &lt;concept&gt;'
+to read about a specific subcommand or concept.
 </code></pre>
 
-<p>usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-b bind_address] [-c cipher_spec]
+<p>说明git环境变量添加成功,然后输入<code>sh</code>控制台会切换到<code>Git-bash</code>的环境下面,然后输入<code>ssh</code>控制台会返回</p>
+
+<pre><code>usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-b bind_address] [-c cipher_spec]
            [-D [bind_address:]port] [-E log_file] [-e escape_char]
            [-F configfile] [-I pkcs11] [-i identity_file]
            [-J [user@]host[:port]] [-L address] [-l login_name] [-m mac_spec]
            [-O ctl_cmd] [-o option] [-p port] [-Q query_option] [-R address]
            [-S ctl_path] [-W host:port] [-w local_tun[:remote_tun]]
-           [user@]hostname [command]</p>
+           [user@]hostname [command]
+</code></pre>
 
-<pre><code>然后在输入指令`ssh-keygen -t rsa`
+<p>然后在输入指令<code>ssh-keygen -t rsa</code>
 &gt;什么意思呢？就是指定 rsa 算法生成密钥，接着连续三个回车键（不需要输入密码），然后就会生成两个文件 id_rsa 和 id_rsa.pub ，而 id_rsa 是密钥，id_rsa.pub 就是公钥。这两文件默认分别在如下目录里生成：Linux/Mac 系统 在 ~/.ssh 下，win系统在 /c/Documents and Settings/username/.ssh 下，都是隐藏文件，相信你们有办法查看的。
-接下来要做的是把 id_rsa.pub 的内容添加到 GitHub 上，这样你本地的 id_rsa 密钥跟 GitHub 上的 id_rsa.pub 公钥进行配对，授权成功才可以提交代码。
+接下来要做的是把 id_rsa.pub 的内容添加到 GitHub 上，这样你本地的 id_rsa 密钥跟 GitHub 上的 id_rsa.pub 公钥进行配对，授权成功才可以提交代码。</p>
 
-6.回到你的github主页,点击你头像倒三角,点击`Settings`,进入 GitHub 上的设置页面，点击最左侧 `SSH and GPG keys`然后点击右上角的 New SSH key 按钮,需要做的只是在 Key 那栏把 id_rsa.pub 公钥文件里的内容复制粘贴进去就可以了，Title 那栏不需要填写，点击 Add SSH key 按钮就ok了。
+<p>6.回到你的github主页,点击你头像倒三角,点击<code>Settings</code>,进入 GitHub 上的设置页面，点击最左侧 <code>SSH and GPG keys</code>然后点击右上角的 New SSH key 按钮,需要做的只是在 Key 那栏把 id_rsa.pub 公钥文件里的内容复制粘贴进去就可以了，Title 那栏不需要填写，点击 Add SSH key 按钮就ok了。</p>
 
-这里提醒下，怎么查看 id_rsa.pub 文件的内容？
-Linux/Mac 用户执行以下命令：
+<p>这里提醒下，怎么查看 id_rsa.pub 文件的内容？
+Linux/Mac 用户执行以下命令：</p>
+
+<pre><code>cd ~/.ssh
+cat id_rsa.pub
 </code></pre>
 
-<p>cd ~/.ssh
-cat id_rsa.pub</p>
+<p>Windows用户，设置显示隐藏文件，可以使用 文本编辑器 打开复制就行了。</p>
 
-<pre><code>Windows用户，设置显示隐藏文件，可以使用 文本编辑器 打开复制就行了。
+<p>SSH key 添加成功之后，输入 ssh -T git@github.com 进行测试，如果出现以下提示:
+<code>Hi UesrName! You've successfully authenticated, but GitHub does not provide shell access.</code>
+证明添加成功了。</p>
 
-SSH key 添加成功之后，输入 ssh -T git@github.com 进行测试，如果出现以下提示:
-`Hi UesrName! You've successfully authenticated, but GitHub does not provide shell access.`
-证明添加成功了。
+<p>7.切换bash路径到Hugo/Sites文件夹下面(注意:cmd用的<code>&quot;\&quot;</code>而bash用的<code>&quot;/&quot;</code>),然后输入指令<code>git clone git@github.com:&lt;UserName&gt;/&lt;UserName&gt;.github.io.git</code>或者<code>git clone git@github.com:&lt;UserName&gt;/&lt;project&gt;.git</code>(注意:请将上文中<UserName>和<project>连同<code>&lt;&gt;</code>一起替换掉),先在你可以看到Sites文件夹下面多了一个项目文件夹</p>
 
-7.切换bash路径到Hugo/Sites文件夹下面(注意:cmd用的`&quot;\&quot;`而bash用的`&quot;/&quot;`),然后输入指令`git clone git@github.com:&lt;UserName&gt;/&lt;UserName&gt;.github.io.git`或者`git clone git@github.com:&lt;UserName&gt;/&lt;project&gt;.git `(注意:请将上文中&lt;UserName&gt;和&lt;project&gt;连同`&lt;&gt;`一起替换掉),先在你可以看到Sites文件夹下面多了一个项目文件夹
+<p>8.打开控制台,切换到Sites文件夹下面,现在使用命令<code>hugo new site example.com</code>,其中<code>example.com</code>是刚才使用git从github上clone下来的文件夹名称,现在你可以看到<code>example.com</code>文件夹下面生成了很多文件夹比如:</p>
 
-8.打开控制台,切换到Sites文件夹下面,现在使用命令`hugo new site example.com`,其中`example.com`是刚才使用git从github上clone下来的文件夹名称,现在你可以看到`example.com`文件夹下面生成了很多文件夹比如:
-</code></pre>
-
-<p>C:\Hugo\Sites&gt; cd example.com
+<pre><code>C:\Hugo\Sites&gt; cd example.com
 C:\Hugo\Sites\example.com&gt; dir
-Directory of C:\hugo\sites\example.com</p>
+Directory of C:\hugo\sites\example.com
 
-<p>04/13/2015  10:44 PM    <DIR>          .
-04/13/2015  10:44 PM    <DIR>          ..
-04/13/2015  10:44 PM    <DIR>          archetypes
+04/13/2015  10:44 PM    &lt;DIR&gt;          .
+04/13/2015  10:44 PM    &lt;DIR&gt;          ..
+04/13/2015  10:44 PM    &lt;DIR&gt;          archetypes
 04/13/2015  10:44 PM                83 config.toml
-04/13/2015  10:44 PM    <DIR>          content
-04/13/2015  10:44 PM    <DIR>          data
-04/13/2015  10:44 PM    <DIR>          layouts
-04/13/2015  10:44 PM    <DIR>          static
+04/13/2015  10:44 PM    &lt;DIR&gt;          content
+04/13/2015  10:44 PM    &lt;DIR&gt;          data
+04/13/2015  10:44 PM    &lt;DIR&gt;          layouts
+04/13/2015  10:44 PM    &lt;DIR&gt;          static
                1 File(s)             83 bytes
-               7 Dir(s)   6,273,331,200 bytes free</p>
-
-<pre><code>hugo的主要目录已经生成完成.
-
-8.在hugo官网有很多主题可以选择,我选择了[bilberry-hugo-theme](https://github.com/Lednerb/bilberry-hugo-theme),打开控制台,切换到上文生成的`themes`文件夹,然后使用git命令`git clone https://github.com/Lednerb/bilberry-hugo-theme.git`然后,依次再在控制台输入`sh` ,`cp -r bilberry-hugo-theme/exampleSite/* ../` ,`cd ../` ,`hugo server -D`
-控制台会输出
+               7 Dir(s)   6,273,331,200 bytes free
 </code></pre>
 
-<p>[K25lBuilding sites … [?25h
+<p>hugo的主要目录已经生成完成.</p>
+
+<p>8.在hugo官网有很多主题可以选择,我选择了<a href="https://github.com/Lednerb/bilberry-hugo-theme">bilberry-hugo-theme</a>,打开控制台,切换到上文生成的<code>themes</code>文件夹,然后使用git命令<code>git clone https://github.com/Lednerb/bilberry-hugo-theme.git</code>然后,依次再在控制台输入<code>sh</code> ,<code>cp -r bilberry-hugo-theme/exampleSite/* ../</code> ,<code>cd ../</code> ,<code>hugo server -D</code>
+控制台会输出</p>
+
+<pre><code>[K25lBuilding sites … [?25h
                    | EN
-+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;+&mdash;-+
++------------------+----+
   Pages            |  3
   Paginator pages  |  0
   Non-page files   |  0
@@ -244,54 +244,48 @@ Directory of C:\hugo\sites\example.com</p>
   Processed images |  0
   Aliases          |  0
   Sitemaps         |  1
-  Cleaned          |  0</p>
+  Cleaned          |  0
 
-<p>Total in 74 ms
-Watching for changes in F:\Hugo\Sites\bootloader.cn{content,data,layouts,static}
+Total in 74 ms
+Watching for changes in F:\Hugo\Sites\bootloader.cn\{content,data,layouts,static}
 Serving pages from memory
-Running in Fast Render Mode. For full rebuilds on change: hugo server &ndash;disableFastRender
-Web Server is available at <a href="http://localhost:1313/">http://localhost:1313/</a> (bind address 127.0.0.1)
-Press Ctrl+C to stop</p>
-
-<pre><code>说明运行没有问题 `Ctrl+C`结束进程.
-9.修改`config.toml`文件的内容,如果你github上的项目是`&lt;UserName&gt;.github.io.git`,则再config.homl里面添加`publishDir = &quot;pubic&quot;`如果是&lt;project&gt;形式,则添加`publishDir = &quot;docs&quot;`,修改完成之后,记得执行一次`hugo server`预览效果.接着执行`&quot;hugo&quot;`命令,在你的项目文件下面会根据publishDir生成对应的文件夹,以及资源文件.如果你选择的是&lt;UserName&gt;.github.io,你现在只需要将public文件夹下面的内容上传到github的master下面,然后Settings--&gt;GitHub Pages--&gt;Source--&gt;master branch;你就可以通过`&lt;UserName&gt;.github.io.git`访问你的博客网站了,如果你选择的是`project`形式,按照上面的操作,通过`&lt;UserName&gt;.github.io.git/&lt;project&gt;`访问,但是这不是最优的选择.
-10.你可以通过bash脚本,将项目上传到github上面
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
 </code></pre>
 
-<p>#!/bin/bash</p>
+<p>说明运行没有问题 <code>Ctrl+C</code>结束进程.
+9.修改<code>config.toml</code>文件的内容,如果你github上的项目是<code>&lt;UserName&gt;.github.io.git</code>,则再config.homl里面添加<code>publishDir = &quot;pubic&quot;</code>如果是<project>形式,则添加<code>publishDir = &quot;docs&quot;</code>,修改完成之后,记得执行一次<code>hugo server</code>预览效果.接着执行<code>&quot;hugo&quot;</code>命令,在你的项目文件下面会根据publishDir生成对应的文件夹,以及资源文件.如果你选择的是<UserName>.github.io,你现在只需要将public文件夹下面的内容上传到github的master下面,然后Settings&ndash;&gt;GitHub Pages&ndash;&gt;Source&ndash;&gt;master branch;你就可以通过<code>&lt;UserName&gt;.github.io.git</code>访问你的博客网站了,如果你选择的是<code>project</code>形式,按照上面的操作,通过<code>&lt;UserName&gt;.github.io.git/&lt;project&gt;</code>访问,但是这不是最优的选择.
+10.你可以通过bash脚本,将项目上传到github上面</p>
 
-<p>echo -e &ldquo;\033[0;32mDeploying updates to GitHub&hellip;\033[0m&rdquo;</p>
+<pre><code>#!/bin/bash
 
-<h1 id="build-the-project">Build the project.</h1>
+echo -e &quot;\033[0;32mDeploying updates to GitHub...\033[0m&quot;
 
-<p>hugo # if using a theme, replace with <code>hugo -t &lt;YOURTHEME&gt;</code></p>
+# Build the project.
+hugo # if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`
 
-<h1 id="go-to-public-folder">Go To Public folder</h1>
+# Go To Public folder
+cd public
+# Add changes to git.
+git add .
 
-<p>cd public</p>
-
-<h1 id="add-changes-to-git">Add changes to git.</h1>
-
-<p>git add .</p>
-
-<h1 id="commit-changes">Commit changes.</h1>
-
-<p>msg=&ldquo;rebuilding site <code>date</code>&ldquo;
+# Commit changes.
+msg=&quot;rebuilding site `date`&quot;
 if [ $# -eq 1 ]
-  then msg=&ldquo;$1&rdquo;
+  then msg=&quot;$1&quot;
 fi
-git commit -m &ldquo;$msg&rdquo;</p>
+git commit -m &quot;$msg&quot;
 
-<h1 id="push-source-and-build-repos">Push source and build repos.</h1>
+# Push source and build repos.
+git push origin master
 
-<p>git push origin master</p>
+# Come Back up to the Project Root
+cd ..
+</code></pre>
 
-<h1 id="come-back-up-to-the-project-root">Come Back up to the Project Root</h1>
-
-<p>cd ..
-``<code>
-将上文代码复制下来,粘贴到文本文件,修改文件名为</code>deploy.sh<code>,将脚本放在你的&lt;project&gt;目录下,控制台切换到&lt;project&gt;目录,执行</code>sh./deploy.sh<code>,现在查看github上,是否已经将文件上传了(注意:如果提示输入github账户密码,则你输入github的账户密码,不要拒绝),如果上传成功,修改</code>Settings&ndash;&gt;GitHub Pages&ndash;&gt;Source&ndash;&gt;master branch /docs folder<code>;通过</code><UserName>.github.io.git/<project><code>访问,你可能觉得这一步是多余的,但是,你已经将hugo编译文件和源文件分开放在github上面了.
-11.最后一步,绑定域名.你可以在Hugo\Sites\project\static文件夹下新建文件</code>CNAME<code>用文本编辑器打开添加你的域名比如</code>bootloader.cn<code>,然后重新执行脚本.你也可以在github project的设置界面</code>Custom domain<code>添加你的域名.或者直接在docs文件夹下面新建文件CNAME.最后,打开你的域名解析网站,将你的域名解析到</code><UserName>.github.io`,你现在就可以用你的域名访问你的个人博客了;</p>
+<p>将上文代码复制下来,粘贴到文本文件,修改文件名为<code>deploy.sh</code>,将脚本放在你的<project>目录下,控制台切换到<project>目录,执行<code>sh</code> <code>./deploy.sh</code>,现在查看github上,是否已经将文件上传了(注意:如果提示输入github账户密码,则你输入github的账户密码,不要拒绝),如果上传成功,修改<code>Settings--&gt;GitHub Pages--&gt;Source--&gt;master branch /docs folder</code>;通过<code>&lt;UserName&gt;.github.io.git/&lt;project&gt;</code>访问,你可能觉得这一步是多余的,但是,你已经将hugo编译文件和源文件分开放在github上面了.
+11.最后一步,绑定域名.你可以在Hugo\Sites\project\static文件夹下新建文件<code>CNAME</code>用文本编辑器打开添加你的域名比如<code>bootloader.cn</code>,然后重新执行脚本.你也可以在github project的设置界面<code>Custom domain</code> 添加你的域名.或者直接在docs文件夹下面新建文件CNAME.最后,打开你的域名解析网站,将你的域名解析到<code>&lt;UserName&gt;.github.io</code>,你现在就可以用你的域名访问你的个人博客了;</p>
 
     
 </div>
