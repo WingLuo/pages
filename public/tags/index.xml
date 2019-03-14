@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on LuoYong&#39;s Blog</title>
+    <link>https://bootloader.cn/tags/</link>
+    <description>Recent content in Tags on LuoYong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 28 Sep 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://bootloader.cn/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Command Line</title>
+      <link>https://bootloader.cn/tags/command-line/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://bootloader.cn/tags/command-line/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fun</title>
+      <link>https://bootloader.cn/tags/fun/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://bootloader.cn/tags/fun/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://bootloader.cn/tags/git/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://bootloader.cn/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://bootloader.cn/tags/go/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://bootloader.cn/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://bootloader.cn/tags/hugo/</link>
+      <pubDate>Thu, 14 Feb 2019 15:36:09 -0600</pubDate>
+      
+      <guid>https://bootloader.cn/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jekyll</title>
+      <link>https://bootloader.cn/tags/jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://bootloader.cn/tags/jekyll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>https://bootloader.cn/tags/markdown/</link>
+      <pubDate>Thu, 14 Feb 2019 15:36:09 -0600</pubDate>
+      
+      <guid>https://bootloader.cn/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Migration</title>
+      <link>https://bootloader.cn/tags/migration/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://bootloader.cn/tags/migration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nasa</title>
+      <link>https://bootloader.cn/tags/nasa/</link>
+      <pubDate>Thu, 27 Dec 2018 20:46:49 -0600</pubDate>
+      
+      <guid>https://bootloader.cn/tags/nasa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quotes</title>
+      <link>https://bootloader.cn/tags/quotes/</link>
+      <pubDate>Wed, 26 Dec 2018 00:29:41 -0600</pubDate>
+      
+      <guid>https://bootloader.cn/tags/quotes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shortcodes</title>
+      <link>https://bootloader.cn/tags/shortcodes/</link>
+      <pubDate>Tue, 12 Feb 2019 23:39:06 -0600</pubDate>
+      
+      <guid>https://bootloader.cn/tags/shortcodes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Templates</title>
+      <link>https://bootloader.cn/tags/templates/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://bootloader.cn/tags/templates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Theme</title>
+      <link>https://bootloader.cn/tags/theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://bootloader.cn/tags/theme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tutorials</title>
+      <link>https://bootloader.cn/tags/tutorials/</link>
+      <pubDate>Fri, 05 Jan 2018 10:35:27 +0800</pubDate>
+      
+      <guid>https://bootloader.cn/tags/tutorials/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

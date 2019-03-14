@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on LuoYong&#39;s Blog</title>
+    <link>https://bootloader.cn/tags/hugo/</link>
+    <description>Recent content in Hugo on LuoYong&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 14 Feb 2019 15:36:09 -0600</lastBuildDate>
+    
+	<atom:link href="https://bootloader.cn/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cupper Typography</title>
+      <link>https://bootloader.cn/cupper-typography/</link>
+      <pubDate>Thu, 14 Feb 2019 15:36:09 -0600</pubDate>
+      
+      <guid>https://bootloader.cn/cupper-typography/</guid>
+      <description>Headings # Heading 1 ## Heading 2 ### Heading 3 #### Heading 4 ##### Heading 5 ###### Heading 6  Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 Text *This text will be italic* _This will also be italic_ **This text will be bold** __This will also be bold__ _You **can** combine them_  This text will be italic
+This will also be italic
+This text will be bold</description>
+    </item>
+    
+    <item>
+      <title>Cupper Shortcodes</title>
+      <link>https://bootloader.cn/cupper-shortcodes/</link>
+      <pubDate>Tue, 12 Feb 2019 23:39:06 -0600</pubDate>
+      
+      <guid>https://bootloader.cn/cupper-shortcodes/</guid>
+      <description>blockquote {{% blockquote author=&amp;quot;Carl Jung&amp;quot; %}} Even a happy life cannot be without a measure of darkness, and the word happy would lose its meaning if it were not balanced by sadness. It is far better to take things as they come along with patience and equanimity. {{% /blockquote %}}  Even a happy life cannot be without a measure of darkness, and the word happy would lose its meaning if it were not balanced by sadness.</description>
+    </item>
+    
+    <item>
+      <title>Hugo in Github Pages</title>
+      <link>https://bootloader.cn/hugo-in-github-pages/</link>
+      <pubDate>Fri, 05 Jan 2018 10:35:27 +0800</pubDate>
+      
+      <guid>https://bootloader.cn/hugo-in-github-pages/</guid>
+      <description>这是第一篇自己的博客,讲述使用github pages和hugo创建自己的个人博客的教程,说实话,经历两天的摸索,终于能够使用简单的操作,将自己写的markdown上传到博客上. 这里讲一下事情的原委: 之前在阿里云上面注册了一个域名bootloader.cn,但是我却不知道有什么用,2018年伊始,郭神的博客推送了一片免费创建个人博客网站的文章,我觉得是时候对自我进行一个投资了(之前看书的时候就有人建议过,作为程序员,要树立自己的品牌形象,让更多的人了解你),当然,在技术行业,也要具有分享精神.当我搭建完自己的博客后,我决定将我的搭建过程分享出来,给大家参考.
+ 首先,你需要一个github的账号.账号肯定是在github.com官网上注册咯.但是我相信,每一个技术人员都有一个自己的github账号.(注册流程我就不说了)
+ 在自己github上new repository,可以是一个项目比如project,也可以是&amp;lt;UerName&amp;gt;.github.io其中&amp;lt;UerName&amp;gt;要一起替换掉自己的github名称.当你创建&amp;lt;UerName&amp;gt;.github.io的一个repository的时候,只需要在&amp;lt;UerName&amp;gt;.github.io根目录下面放上一个index.html,就可以通过htps://&amp;lt;UerName&amp;gt;.github.io来进行访问了;
+ 如果你想最简单的创建自己的博客网站,那么fork一下jekyll- now,然后Settings&amp;ndash;&amp;gt;Repository name 改为&amp;lt;UerName&amp;gt;.github.io&amp;ndash;&amp;gt;RENAME;Settings&amp;ndash;&amp;gt;GitHub Pages&amp;ndash;&amp;gt;Source&amp;ndash;&amp;gt;master branch;Code&amp;ndash;&amp;gt;_config.yml&amp;ndash;&amp;gt;Edit This File;按照需求修改,现在你就可以通过htps://&amp;lt;UerName&amp;gt;.github.io访问你的博客了,当然你后续的要上传的文章,需要写成.md(markdown)的文件上传到_posts文件夹下面github会自动帮你生成.本文是Hugo的文章,所以这里就简单的介绍了一下jekyll
+ 安装Hugo, 英文版的教程,看着头大,还好有google翻译,整个流程是:新建Hugo的文件夹(在你想要放置hugo的任意位置),在Hugo文件夹下面新建bin和Seits文件夹,下载对应的Hugo发行版,将文件解压到bin文件夹下面,将可执行文件更名为hugo.exe,设置环境变量Path添加路径指向到bin文件夹,打开控制台,输入hugo help,显示
+  hugo is the main command, used to build your Hugo site. Hugo is a Fast and Flexible Static Site Generator built with love by spf13 and friends in Go. Complete documentation is available at https://gohugo.io/.  说明hugo安装成功了,如果失败,请参照Hugo安装文档
+ 安装Git,我是用的windows系统,并且下载的是Git for Windows Portable（“thumbdrive edition”）版本,解压到你想要的路径,然后配置环境变量中Path添加路径指向到Git安装路径的bin文件夹,打开控制台,输入git,如果出现  usage: git [--version] [--help] [-C &amp;lt;path&amp;gt;] [-c name=value] [--exec-path[=&amp;lt;path&amp;gt;]] [--html-path] [--man-path] [--info-path] [-p | --paginate | --no-pager] [--no-replace-objects] [--bare] [--git-dir=&amp;lt;path&amp;gt;] [--work-tree=&amp;lt;path&amp;gt;] [--namespace=&amp;lt;name&amp;gt;] &amp;lt;command&amp;gt; [&amp;lt;args&amp;gt;] These are common Git commands used in various situations: start a working area (see also: git help tutorial) clone Clone a repository into a new directory init Create an empty Git repository or reinitialize an existing one work on the current change (see also: git help everyday) add Add file contents to the index mv Move or rename a file, a directory, or a symlink reset Reset current HEAD to the specified state rm Remove files from the working tree and from the index examine the history and state (see also: git help revisions) bisect Use binary search to find the commit that introduced a bug grep Print lines matching a pattern log Show commit logs show Show various types of objects status Show the working tree status grow, mark and tweak your common history branch List, create, or delete branches checkout Switch branches or restore working tree files commit Record changes to the repository diff Show changes between commits, commit and working tree, etc merge Join two or more development histories together rebase Reapply commits on top of another base tip tag Create, list, delete or verify a tag object signed with GPG collaborate (see also: git help workflows) fetch Download objects and refs from another repository pull Fetch from and integrate with another repository or a local branch push Update remote refs along with associated objects &#39;git help -a&#39; and &#39;git help -g&#39; list available subcommands and some concept guides.</description>
+    </item>
+    
+    <item>
+      <title>Creating a New Theme</title>
+      <link>https://bootloader.cn/creating-a-new-theme/</link>
+      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://bootloader.cn/creating-a-new-theme/</guid>
+      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
+We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+    </item>
+    
+    <item>
+      <title>(Hu)go Template Primer</title>
+      <link>https://bootloader.cn/goisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://bootloader.cn/goisforlovers/</guid>
+      <description>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
+This document is a brief primer on using Go templates.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with Hugo</title>
+      <link>https://bootloader.cn/hugoisforlovers/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://bootloader.cn/hugoisforlovers/</guid>
+      <description>Step 1. Install Hugo Go to Hugo releases and download the appropriate version for your OS and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at Install Hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:
+ Clone the Hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+    </item>
+    
+    <item>
+      <title>Migrate to Hugo from Jekyll</title>
+      <link>https://bootloader.cn/migrate-from-jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://bootloader.cn/migrate-from-jekyll/</guid>
+      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
+▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+  </channel>
+</rss>
